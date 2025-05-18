@@ -131,7 +131,6 @@ class RecommendationsScreen extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 16),
-                        // Spécialités
                         Wrap(
                           spacing: 8,
                           runSpacing: 8,

@@ -12,9 +12,9 @@ class HomeScreen extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              const Color(0xFF1A237E), // Bleu profond
-              const Color(0xFF0D47A1), // Bleu royal
-              const Color(0xFF1565C0), // Bleu ciel
+              const Color(0xFF1A237E),
+              const Color(0xFF0D47A1),
+              const Color(0xFF1565C0),
             ],
           ),
         ),
@@ -22,7 +22,6 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(height: 50),
-              // Logo avec motif africain
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(

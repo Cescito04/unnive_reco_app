@@ -57,7 +57,6 @@ class RegisterScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 40),
-                // Formulaire d'inscription
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
