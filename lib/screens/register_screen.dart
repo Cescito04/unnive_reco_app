@@ -11,7 +11,7 @@ class RegisterScreen extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Colors.blue.shade50, Colors.white],
+            colors: [const Color(0xFF1A237E).withOpacity(0.1), Colors.white],
           ),
         ),
         child: SafeArea(
@@ -21,18 +21,22 @@ class RegisterScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 const SizedBox(height: 40),
-                // Logo
+                // Logo avec motif africain
                 Center(
                   child: Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Colors.blue.withOpacity(0.1),
+                      color: const Color(0xFF1A237E).withOpacity(0.1),
                       shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.amber.shade300,
+                        width: 2,
+                      ),
                     ),
                     child: const Icon(
                       Icons.school,
                       size: 50,
-                      color: Colors.blue,
+                      color: Color(0xFF1A237E),
                     ),
                   ),
                 ),
@@ -42,13 +46,13 @@ class RegisterScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+                    color: Color(0xFF1A237E),
                   ),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
                 const Text(
-                  'Rejoignez notre communauté',
+                  'Rejoignez la communauté des étudiants africains',
                   style: TextStyle(fontSize: 16, color: Colors.grey),
                   textAlign: TextAlign.center,
                 ),
@@ -60,7 +64,7 @@ class RegisterScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.blue.withOpacity(0.1),
+                        color: const Color(0xFF1A237E).withOpacity(0.1),
                         blurRadius: 20,
                         offset: const Offset(0, 10),
                       ),
@@ -75,7 +79,7 @@ class RegisterScreen extends StatelessWidget {
                           hintText: 'Entrez votre nom complet',
                           prefixIcon: const Icon(
                             Icons.person,
-                            color: Colors.blue,
+                            color: Color(0xFF1A237E),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -92,7 +96,7 @@ class RegisterScreen extends StatelessWidget {
                           hintText: 'Entrez votre email',
                           prefixIcon: const Icon(
                             Icons.email,
-                            color: Colors.blue,
+                            color: Color(0xFF1A237E),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -110,7 +114,7 @@ class RegisterScreen extends StatelessWidget {
                           hintText: 'Créez votre mot de passe',
                           prefixIcon: const Icon(
                             Icons.lock,
-                            color: Colors.blue,
+                            color: Color(0xFF1A237E),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -128,7 +132,7 @@ class RegisterScreen extends StatelessWidget {
                           hintText: 'Confirmez votre mot de passe',
                           prefixIcon: const Icon(
                             Icons.lock_outline,
-                            color: Colors.blue,
+                            color: Color(0xFF1A237E),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -147,7 +151,7 @@ class RegisterScreen extends StatelessWidget {
                     Navigator.pushReplacementNamed(context, '/recommendations');
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                    backgroundColor: const Color(0xFF1A237E),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     shape: RoundedRectangleBorder(
@@ -175,7 +179,7 @@ class RegisterScreen extends StatelessWidget {
                       child: const Text(
                         'Se connecter',
                         style: TextStyle(
-                          color: Colors.blue,
+                          color: Color(0xFF1A237E),
                           fontWeight: FontWeight.bold,
                         ),
                       ),

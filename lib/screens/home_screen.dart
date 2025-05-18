@@ -12,9 +12,9 @@ class HomeScreen extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Colors.blue.shade700,
-              Colors.blue.shade500,
-              Colors.blue.shade300,
+              const Color(0xFF1A237E), // Bleu profond
+              const Color(0xFF0D47A1), // Bleu royal
+              const Color(0xFF1565C0), // Bleu ciel
             ],
           ),
         ),
@@ -22,19 +22,20 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(height: 50),
-              // Logo ou icône
+              // Logo avec motif africain
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.2),
                   shape: BoxShape.circle,
+                  border: Border.all(color: Colors.amber.shade300, width: 2),
                 ),
-                child: const Icon(Icons.school, size: 80, color: Colors.white),
+                child: const Icon(Icons.school, size: 80, color: Colors.amber),
               ),
               const SizedBox(height: 40),
               // Titre principal
               const Text(
-                'University\nRecommendations',
+                'Universités\nAfricaines',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 40,
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 20),
               // Sous-titre
               const Text(
-                'Découvrez les meilleures universités\nadaptées à votre profil',
+                'Découvrez les meilleures universités\ndu continent africain',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
@@ -65,8 +66,8 @@ class HomeScreen extends StatelessWidget {
                         Navigator.pushNamed(context, '/login');
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.blue,
+                        backgroundColor: Colors.amber,
+                        foregroundColor: const Color(0xFF1A237E),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 50,
                           vertical: 20,
@@ -92,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                       child: const Text(
                         'Créer un compte',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.amber,
                           fontSize: 16,
                           decoration: TextDecoration.underline,
                         ),

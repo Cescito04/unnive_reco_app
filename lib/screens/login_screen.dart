@@ -11,7 +11,7 @@ class LoginScreen extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Colors.blue.shade50, Colors.white],
+            colors: [const Color(0xFF1A237E).withOpacity(0.1), Colors.white],
           ),
         ),
         child: SafeArea(
@@ -21,18 +21,22 @@ class LoginScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 const SizedBox(height: 40),
-                // Logo
+                // Logo avec motif africain
                 Center(
                   child: Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Colors.blue.withOpacity(0.1),
+                      color: const Color(0xFF1A237E).withOpacity(0.1),
                       shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.amber.shade300,
+                        width: 2,
+                      ),
                     ),
                     child: const Icon(
                       Icons.school,
                       size: 50,
-                      color: Colors.blue,
+                      color: Color(0xFF1A237E),
                     ),
                   ),
                 ),
@@ -42,13 +46,13 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+                    color: Color(0xFF1A237E),
                   ),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
                 const Text(
-                  'Connectez-vous pour continuer',
+                  'Connectez-vous pour accéder aux universités africaines',
                   style: TextStyle(fontSize: 16, color: Colors.grey),
                   textAlign: TextAlign.center,
                 ),
@@ -60,7 +64,7 @@ class LoginScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.blue.withOpacity(0.1),
+                        color: const Color(0xFF1A237E).withOpacity(0.1),
                         blurRadius: 20,
                         offset: const Offset(0, 10),
                       ),
@@ -75,7 +79,7 @@ class LoginScreen extends StatelessWidget {
                           hintText: 'Entrez votre email',
                           prefixIcon: const Icon(
                             Icons.email,
-                            color: Colors.blue,
+                            color: Color(0xFF1A237E),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -93,7 +97,7 @@ class LoginScreen extends StatelessWidget {
                           hintText: 'Entrez votre mot de passe',
                           prefixIcon: const Icon(
                             Icons.lock,
-                            color: Colors.blue,
+                            color: Color(0xFF1A237E),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -110,7 +114,7 @@ class LoginScreen extends StatelessWidget {
                           onPressed: () {},
                           child: const Text(
                             'Mot de passe oublié ?',
-                            style: TextStyle(color: Colors.blue),
+                            style: TextStyle(color: Color(0xFF1A237E)),
                           ),
                         ),
                       ),
@@ -123,7 +127,7 @@ class LoginScreen extends StatelessWidget {
                     Navigator.pushReplacementNamed(context, '/recommendations');
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                    backgroundColor: const Color(0xFF1A237E),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     shape: RoundedRectangleBorder(
@@ -151,7 +155,7 @@ class LoginScreen extends StatelessWidget {
                       child: const Text(
                         'S\'inscrire',
                         style: TextStyle(
-                          color: Colors.blue,
+                          color: Color(0xFF1A237E),
                           fontWeight: FontWeight.bold,
                         ),
                       ),
